@@ -1,24 +1,36 @@
-# README
+# Rails on Kubernetes starter application
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+To run Ruby on Rails on Kubernetes in the fastest way.
 
-Things you may want to cover:
+This application is published as a sample when posting a guide at [Qiita](https://qiita.com/).
 
-* Ruby version
+# Requirements
 
-* System dependencies
+Basically, it works in any environment, but I recommend running on minikube for the simplest.
 
-* Configuration
+It's easy to install [minikube](https://github.com/kubernetes/minikube). if you use Homebrew, just execute following command.
 
-* Database creation
+`$ brew cask install minikube`
 
-* Database initialization
+If you are not using Mac or Homebrew, please check the link above in detail.
 
-* How to run the test suite
+# Commands for running on k8s
 
-* Services (job queues, cache servers, search engines, etc.)
+First, start minikube.
 
-* Deployment instructions
+`$ minikube start`
 
-* ...
+Then apply the k8s configuration file in the project.
+
+```bash
+$ kubectl apply -f kube/namespace
+$ kubectl apply -f kube/config
+$ kubectl apply -f kube/volumes
+$ kubectl apply -f kube/settings
+```
+
+It's all done with these four commands. 
+
+Rails will be running on your minikube after a while. (It takes time to pull containers for at first time.)
+
+Only using 6 configuration files. Kubernetes is powerful, but we can start like this simply.
