@@ -14,11 +14,11 @@ If you are not using Mac or Homebrew, please check the link above in detail.
 
 # Commands for running on k8s
 
-First, start minikube.
+First, You must start minikube.
 
 `$ minikube start`
 
-Then apply the k8s configuration file in the project.
+Then apply the k8s configuration files in this project.
 
 ```bash
 $ kubectl apply -f kube/namespace
