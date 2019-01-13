@@ -18,6 +18,10 @@ First, You must start minikube.
 
 `$ minikube start`
 
+And please enable ingress addon.
+
+`$ minikube addons enable ingress`
+
 Then apply the k8s configuration files in this project.
 
 ```bash
