@@ -1,0 +1,20 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  namespace: sample
+  name: setup
+spec:
+  template:
+    metadata:
+      name: setup
+    spec:
+      containers:
+      - name: setup
+        image: keijingo55/sample_rails:latest
+        imagePullPolicy: Always
+        command: ["/bin/sh"]
+        args: ["-c", "bundle exec rake db:create && bundle exec rake db:migrate"]
+        envFrom:
+        - configMapRef:
+            name: rails-config
+      restartPolicy: Never

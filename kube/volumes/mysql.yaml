@@ -1,0 +1,28 @@
+kind: PersistentVolume
+apiVersion: v1
+metadata:
+  namespace: sample
+  name: mysql-pv
+  labels:
+    type: local
+spec:
+  capacity:
+    storage: 10Gi
+  accessModes:
+  - ReadWriteOnce
+  storageClassName: standard
+  hostPath:
+    path: "/var/kube/sample/mysql"
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  namespace: sample
+  name: mysql-pvc
+spec:
+  accessModes:
+  - ReadWriteOnce
+  resources:
+    requests:
+      storage: 5Gi
+  storageClassName: standard
