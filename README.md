@@ -6,9 +6,7 @@ This application is published as a sample when posting a guide at [Qiita](https:
 
 # Requirements
 
-Basically, it works in any environment, but I recommend running on minikube for the simplest.
-
-It's easy to install [minikube](https://github.com/kubernetes/minikube). if you use Homebrew, just execute following command.
+Basically, it works in any environment, but I recommend running on minikube for the simplest. It's easy to install [minikube](https://github.com/kubernetes/minikube). if you use Homebrew, just execute following command.
 
 `$ brew cask install minikube`
 
@@ -29,8 +27,6 @@ $ kubectl apply -f kube/volumes
 $ kubectl apply -f kube/settings
 ```
 
-It's all done with these four commands. 
-
-Rails will be running on your minikube after a while. (It takes time to pull containers for at first time.)
+It's all done with these four commands. Rails will be running on your minikube after a while. (It takes time to pull containers for at first time.)
 
 Only using 6 configuration files. Kubernetes is powerful, but we can start like this simply.
