@@ -4,12 +4,7 @@ metadata:
   namespace: sample
   name: rails-config
 data:
-  RAILS_LOG_TO_STDOUT: 'true'
-  RAILS_SERVE_STATIC_FILES: 'true'
   RAILS_ENV: 'development'
-  DATABASE_NAME: 'app_development'
-  DATABASE_PORT: '3306'
   MYSQL_HOST: 'mysql'
   MYSQL_USER: 'root'
-  MYSQL_PASSWORD: 'password'
   MYSQL_ROOT_PASSWORD: 'password'
