@@ -2,7 +2,7 @@
 
 To run Ruby on Rails on Kubernetes in the fastest way.
 
-This application is published as a sample when posting a guide at [Qiita](https://qiita.com/).
+This application is published as a sample when posting a guide at [Qiita](https://qiita.com/ttiger55/items/215cab36da848fba156b).
 
 # Requirements
 
