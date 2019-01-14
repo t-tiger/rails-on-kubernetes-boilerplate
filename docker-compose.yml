@@ -14,7 +14,7 @@ services:
   rails:
     build:
       context: .
-      dockerfile: docker/rails/Dockerfile
+      dockerfile: Dockerfile
     image: sample_rails
     command: /bin/sh -c 'rm -rf tmp/pids/server.pid && bundle exec rails s'
     ports:
