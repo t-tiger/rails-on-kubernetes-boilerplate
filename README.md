@@ -33,4 +33,4 @@ $ kubectl apply -f kube/settings
 
 It's all done with these four commands. Rails will be running on your minikube after a while. (It takes time to pull containers for at first time.)
 
-Only using 6 configuration files. Kubernetes is powerful, but we can start like this simply.
+Only using 7 configuration files. Kubernetes is powerful, but we can start like this simply.
