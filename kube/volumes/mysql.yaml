@@ -12,7 +12,7 @@ spec:
   - ReadWriteOnce
   storageClassName: standard
   hostPath:
-    path: "/var/kube/sample/mysql"
+    path: "/tmp/mysql"
 ---
 apiVersion: v1
 kind: PersistentVolumeClaim
