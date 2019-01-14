@@ -25,7 +25,7 @@ And please enable ingress addon.
 Then apply the k8s configuration files in this project.
 
 ```bash
-$ kubectl apply -f kube/namespace
+$ kubectl create -f kube/namespace
 $ kubectl apply -f kube/config
 $ kubectl apply -f kube/volumes
 $ kubectl apply -f kube/settings
