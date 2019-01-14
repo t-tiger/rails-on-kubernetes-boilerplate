@@ -3,13 +3,12 @@ kind: Service
 metadata:
   namespace: sample
   name: rails
-  labels:
-    app: rails
 spec:
-  ports:
-  - port: 3000
   selector:
     app: rails
+  type: ClusterIP
+  ports:
+  - port: 3000
 ---
 apiVersion: apps/v1
 kind: Deployment

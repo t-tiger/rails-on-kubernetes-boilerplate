@@ -4,11 +4,12 @@ metadata:
   namespace: sample
   name: mysql
 spec:
-  ports:
-  - port: 3306
   selector:
     app: mysql
+  type: ClusterIP
   clusterIP: None
+  ports:
+    - port: 3306
 ---
 apiVersion: apps/v1
 kind: Deployment
